@@ -106,6 +106,8 @@
     <bool name="support_camera_movie_solid">true</bool>
     <!--whether support shader effect in camera-->
     <bool name="support_camera_shader_effect">true</bool>
+    <!-- whether camera support India special filter -->
+    <bool name="camera_support_india_filter">true</bool>
     <!--whether support skin beauty in camera-->
     <bool name="support_camera_skin_beauty">true</bool>
     <!--whether support age detection in camera-->
@@ -215,10 +217,8 @@
     <float name="camera_exposure_compensation_steps_num">12.0</float>
     <!--Left margin of count down parent layout for front camera-->
     <float name="camera_front_count_down_margin">0.3177</float>
-    <!--When these apps access camera, force use higher size -->
-    <string-array name="remove_lower_perview_size_list">
-        <item>com.tencent.mm</item>
-    </string-array>
+    <!-- whether this device is Android one -->
+    <bool name="is_android_one_device">true</bool>
     <!--camera continuous shot callback class name-->
     <string name="camera_continuous_shot_callback_class">ContinuousShotCallback</string>
     <!--camera continuous shot callback setter method name-->
@@ -264,13 +264,14 @@
     <bool name="camera_is_support_portrait_switch">true</bool>
     <!-- whether camera support AI lens entry -->
     <bool name="camera_support_ai_lens">true</bool>
+    <bool name="camera_support_google_lens">true</bool>
     <!--whether taking legacy face beauty in camera-->
     <bool name="is_legacy_face_beauty">false</bool>
     <!--whether front camera support hdr or not-->
     <bool name="support_front_hdr">true</bool>
     <!-- Camera HDR default value -->
     <integer name="support_camera_hdr_default_value">3</integer>
-    <integer name="support_camera_front_hdr_default_value">1</integer>
+    <integer name="support_camera_front_hdr_default_value">3</integer>
 　　<!--whether front camera support hht or not-->
     <bool name="support_front_hht">true</bool>
     <!--whether front camera support bokeh or not-->
@@ -281,6 +282,8 @@
     <bool name="enhance_beauty_with_hht">true</bool>
     <!--whether support add watermark on bottom left of picture-->
     <bool name="support_picture_watermark">true</bool>
+    <!-- water mark default value -->
+    <bool name="camera_picture_watermark_default">false</bool>
     <!--whether need video stabilizatiion crop-->
     <bool name="disable_video_stabilization_in_speed_slow_mode">true</bool>
     <!--whether add algorithm in file name or not-->
