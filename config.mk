@@ -2,10 +2,6 @@ VENDOR_PATH := vendor/xiaomi/MiuiCamera
 
 # Camera Blobs
 PRODUCT_COPY_FILES += \
-    $(VENDOR_PATH)/system/etc/device_features/jasmine.xml:system/etc/device_features/jasmine.xml \
-    $(VENDOR_PATH)/system/lib64/libavast-utils.so:system/lib64/libavast-utils.so \
-    $(VENDOR_PATH)/system/lib64/libavast-vps-interface.so:system/lib64/libavast-vps-interface.so \
-    $(VENDOR_PATH)/system/lib64/libavcodec-milink.so:system/lib64/libavcodec-milink.so \
     $(VENDOR_PATH)/system/lib64/libCameraEffectJNI.so:system/lib64/libCameraEffectJNI.so \
     $(VENDOR_PATH)/system/lib64/libdualcameraddm.so:system/lib64/libdualcameraddm.so \
     $(VENDOR_PATH)/system/lib64/libjni_clearsight.so:system/lib64/libjni_clearsight.so \
@@ -45,6 +41,11 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/lib64/libscvePanorama.so:system/lib64/libscvePanorama.so \
     $(VENDOR_PATH)/system/lib64/libscvePanorama_lite.so:system/lib64/libscvePanorama_lite.so \
     $(VENDOR_PATH)/system/lib64/libyuv.so:system/lib64/libyuv.so 
+
+# Camera Permissions
+PRODUCT_COPY_FILES += \
+    $(VENDOR_PATH)/system/etc/default-permissions/MiuiCamera-permissions.xml:system/etc/default-permissions/MiuiCamera-permissions.xml \
+    $(VENDOR_PATH)/system/etc/device_features/jasmine.xml:system/etc/device_features/jasmine.xml
 	
 PRODUCT_PACKAGES += \
     MiuiCamera
