@@ -44,7 +44,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/system/lib64/libmmcamera2_frame_algorithm.so:system/lib64/libmmcamera2_frame_algorithm.so \
     $(VENDOR_PATH)/system/lib64/libmmcamera2_is.so:system/lib64/libmmcamera2_is.so \
     $(VENDOR_PATH)/system/lib64/libmmcamera2_q3a_core.so:system/lib64/libmmcamera2_q3a_core.so \
-    $(VENDOR_PATH)/system/lib64/libmmcamera2_stats_algorithm:system/lib64/libmmcamera2_stats_algorithm.so \
+    $(VENDOR_PATH)/system/lib64/libmmcamera2_stats_algorithm.so:system/lib64/libmmcamera2_stats_algorithm.so \
     $(VENDOR_PATH)/system/lib64/libmm-omxcore.so:system/lib64/libmm-omxcore.so \
     $(VENDOR_PATH)/system/lib64/libmorpho_group_portrait.so:system/lib64/libmorpho_group_portrait.so \
     $(VENDOR_PATH)/system/lib64/libmorpho_groupshot.so:system/lib64/libmorpho_groupshot.so \
